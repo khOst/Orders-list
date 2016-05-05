@@ -1,0 +1,305 @@
+// imports
+@import 'reset';
+
+// variables
+$color-default: #333;
+$color-light-grey: #999;
+$color-orange: #f15e00;
+$color-light-blue: #25a7df;
+$color-light-blue-2: #446699;
+$color-success: #48ad00;
+$color-cancelled: #cc3300;
+
+//mixins
+@mixin display-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+@mixin transition($prop) {
+  -webkit-transition: $prop;
+  -moz-transition: $prop;
+  -o-transition: $prop;
+  transition: $prop;
+}
+
+@mixin rotate($deg) {
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg); 
+  -webkit-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+// custom
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.color-success {
+  color: $color-success;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+//main
+body {
+  color: $color-default;
+  font-size: 14px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.container {
+  max-width: 925px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+//navigation
+.nav {
+  li {
+    display: inline-block;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      color: $color-light-blue;
+      font-size: 20px;
+      text-decoration: none;
+      border-bottom: 2px dotted $color-light-blue;
+      &.active {
+        color: $color-default;
+        text-decoration: none;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+//orders
+.orders {
+  margin-top: 35px;
+}
+
+.order-heading > div,
+.order-heading > h1 {
+  float: left;
+  & > div {
+    display: inline-block;
+  }
+}
+
+.list-item {
+  position: relative;
+  padding: 20px 0;
+} 
+
+.line {
+  position: absolute;
+  bottom: 10px;
+  max-height: 1px;
+}
+
+.line-custom {
+  bottom: 65px;
+}
+
+.date,
+.number {
+  min-width: 200px;
+}
+
+//info
+.info {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  @include transition(.3s all ease-in-out);
+}
+
+//show
+.show {
+  max-height: 100%;
+  display: block;
+  opacity: 1;
+}
+
+// order data
+.order-data {
+  margin: 35px 0 10px;
+}
+
+.data-item {
+  padding: 5px 0;
+  & > div {
+   display: inline-block;
+    &:first-child {
+      width: 200px;
+      color: $color-light-grey;
+    }
+  }
+}
+
+// purchases
+.purchases-heading,
+.purchases-goods:last-child,
+.order-delivery {
+  position: relative;
+}
+
+.purchases-heading > div,
+.purchases-goods > div {
+  float: left;
+}
+
+.purchases-heading  {
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+.purchases-goods {
+  padding: 20px 0;
+}
+
+// goods
+.goods-description {
+  min-width: 360px;
+  width: 60%;
+  .image {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+  }
+  .content {
+    font-size: 12px;
+    a {
+      color: $color-light-blue-2;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.goods-quantity {
+  width: 10%;
+  text-align: center;
+}
+
+.goods-price {
+  width: 30%;
+}
+
+//price
+.price {
+  color: $color-orange;
+  font-weight: bold;
+}
+
+.price-cancelled {
+  color: $color-light-grey;
+  text-decoration: line-through;
+}
+
+//order delivery, total
+.order-delivery,
+.order-total {
+  padding: 20px 0;
+}
+
+.order-total {
+  @include display-flex;
+  justify-content: space-between;
+  .total > .price {
+    font-size: 16px;
+  }
+}
+
+// icons
+.icon-book,
+.icon-car,
+.icon-status-done,
+.icon-status-cancel,
+.icon-arrow-down,
+.icon-triangle-right { 
+  display: inline-block;
+  background: url('../img/icons/sprite.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  vertical-align: middle;
+}
+ 
+.icon-book { 
+  background-position: -0px -0px; 
+  width: 23px; 
+  height: 21px; 
+
+  position: absolute;
+  bottom: -8px;
+  right: -12px;
+}
+
+.icon-car { 
+  background-position: -0px -21px; 
+  width: 18px; 
+  height: 13px; 
+}
+
+.icon-status-done { 
+  background-position: -0px -34px; 
+  width: 12px; 
+  height: 12px; 
+}
+
+.icon-status-cancel { 
+  background-position: -12px -34px; 
+  width: 10px; 
+  height: 9px; 
+}
+
+.icon-arrow-down { 
+  background-position: -12px -43px;
+  width: 8px;
+  height: 13px;
+
+  position: absolute;
+  left: 100px;
+  top: calc(50% - 7px);
+  @include transition(.2s ease-in-out);
+}
+
+.icon-triangle-right { 
+  background-position: -0px -46px;
+  width: 7px;
+  height: 13px;
+
+  position: absolute;
+  right: 0;
+  top: 21px;
+  @include transition(.3s ease-in-out);
+}
+
+.rotate-half-PI {
+  @include rotate(90deg);
+}
+
+.rotate-PI {
+  @include rotate(180deg);
+}
+
+

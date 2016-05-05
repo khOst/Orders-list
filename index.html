@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- header -->
+    <header class="header">
+
+      <!-- navigation -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="active">Все заказы</a></li>
+          <li><a href="#">Текущие</a></li>
+          <li><a href="#">Завершенные</a></li>
+          <li><a href="#">Отмененные</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- orders -->
+    <section class="orders">
+      
+      <!-- title of items -->
+      <div class="list-item title text-bold">
+        <div class="line line-custom"><img src="img/line.png" alt="line"></div>
+        <div class="order-heading clearfix">
+          <div class="date">
+            <h1>Дата заказа</h1>
+            <div id="arrow" class="icon-arrow-down"></div> 
+          </div>
+          <h1 class="number">№ заказа</h1>
+          <h1>Текущий статус</h1>
+        </div>
+        <div class="line"><img src="img/line.png" alt="line"></div>
+      </div>
+      
+      <ul id="ul-main">
+    
+        <!-- item -->
+        <li class="order list-item">
+          <div class="order-heading clearfix">
+            <div class="date" data-time="1339189200000">9 июля 2012</div>
+            <div class="number">№0570</div>
+            <div class="status">
+              <div class="icon-status-cancel"></div>
+              <div>Отменен</div>
+            </div>
+            <div class="icon-triangle-right"></div>
+          </div>
+          <!-- more info -->
+          <div class="info">
+
+            <!-- data -->
+            <div class="order-data">
+              <ul>
+                <li class="data-item">
+                  <div>Имя получателя:</div>
+                  <div>г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                </li>
+                <li class="data-item">
+                  <div>Электронная почта:</div>
+                  <div>+38 050 123-45-56</div>
+                </li>
+                <li class="data-item">
+                  <div>Доставка:</div>
+                  <div>Курьером лично в руки. Адрес: г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                </li>
+                <li class="data-item">
+                  <div>Оплата:</div>
+                  <div>Наличными при получении</div>
+                </li>
+              </ul>
+            </div>
+                
+            <!-- purchases -->
+            <div class="order-purchases">
+              <div class="purchases-heading text-bold clearfix">
+                <div class="goods-description">Товары в заказе</div>
+                <div class="goods-quantity">Количество</div>
+                <div class="goods-price text-right">Цена</div>
+                <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+              </div>
+
+              <!-- goods (item) -->
+              <div class="purchases-goods clearfix">
+                
+                <!-- description -->
+                <div class="goods-description">
+                  
+                  <!-- image -->
+                  <div class="image">
+                    <div class="icon-book"></div>
+                    <img src="img/girl-with-dragon-tattoo.png" alt="Girl with dragon tattoo">
+                  </div>
+                  
+                  <!-- content -->
+                  <div class="content">
+                    <p>
+                      <a href="#">Девушка с татуировкой дракона</a>
+                      Стиг Ларрсон
+                    </p>
+                    <p class="price">138 грн.</p>
+                  </div>
+                </div>
+                <div class="goods-quantity">1</div>
+                <div class="goods-price price text-right">138 грн.</div>
+              </div>
+                  
+              <!-- goods (item) -->
+              <div class="purchases-goods clearfix">
+                  
+                <!-- description -->
+                <div class="goods-description">
+                  
+                  <!-- image -->
+                  <div class="image">
+                    <div class="icon-book"></div>
+                    <img src="img/hornet-nest.png" alt="The Girl Who Kicked the Hornet's Nest">
+                  </div>
+                  
+                  <!-- content -->
+                  <div class="content">
+                    <p>
+                      <a href="#">Девушка, которая взрывала воздушные замки</a>
+                      Стиг Ларрсон
+                    </p>
+                    <p class="price-cancelled">170 грн.</p>
+                    <p class="price">138 грн.</p>
+                  </div>
+                </div>
+                <div class="goods-quantity">1</div>
+                <div class="goods-price price text-right">138 грн.</div>
+                <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+              </div>
+            </div>
+            
+            <!-- delivery -->
+            <div class="order-delivery text-right">Доставка:
+              <span class="price">20 грн.</span>
+              <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+            </div>
+            <div class="order-total">
+              <p class="bonuses"><span class="text-bold">+38 бонусов</span> за этот заказ</p>
+              <p class="total">Сумма заказа: <span class="price">182 грн.</span></p>
+            </div>
+          </div>
+          <div class="line"><img src="img/line.png" alt="line"></div>
+        </li>
+    
+        <!-- item -->
+        <li class="order list-item">
+          <div class="order-heading clearfix">
+            <div class="date" data-time="1338670800000">3 июля 2012</div>
+            <div class="number">№ ME0017681</div>
+            <div class="status">
+              <div class="icon-car"></div>
+              <div>Отправлен курьерской службой</div>
+            </div>
+            <div class="icon-triangle-right"></div>
+          </div>
+          
+          <!-- more info -->
+          <div class="info">
+
+            <!-- data -->
+            <div class="order-data">
+              <ul>
+                <li class="data-item">
+                  <div>Имя получателя:</div>
+                  <div>г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                </li>
+                <li class="data-item">
+                  <div>Электронная почта:</div>
+                  <div>+38 050 123-45-56</div>
+                </li>
+                <li class="data-item">
+                  <div>Доставка:</div>
+                  <div>Курьером лично в руки. Адрес: г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                </li>
+                <li class="data-item">
+                  <div>Оплата:</div>
+                  <div>Наличными при получении</div>
+                </li>
+              </ul>
+            </div>
+                
+            <!-- purchases -->
+            <div class="order-purchases">
+              <div class="purchases-heading text-bold clearfix">
+                <div class="goods-description">Товары в заказе</div>
+                <div class="goods-quantity">Количество</div>
+                <div class="goods-price text-right">Цена</div>
+                <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+              </div>
+
+              <!-- goods (item) -->
+              <div class="purchases-goods clearfix">
+                
+                <!-- description -->
+                <div class="goods-description">
+                  
+                  <!-- image -->
+                  <div class="image">
+                    <div class="icon-book"></div>
+                    <img src="img/girl-with-dragon-tattoo.png" alt="Girl with dragon tattoo">
+                  </div>
+                  
+                  <!-- content -->
+                  <div class="content">
+                    <p>
+                      <a href="#">Девушка с татуировкой дракона</a>
+                      Стиг Ларрсон
+                    </p>
+                    <p class="price">138 грн.</p>
+                  </div>
+                </div>
+                <div class="goods-quantity">1</div>
+                <div class="goods-price price text-right">138 грн.</div>
+              </div>
+                  
+              <!-- goods (item) -->
+              <div class="purchases-goods clearfix">
+                  
+                <!-- description -->
+                <div class="goods-description">
+                  
+                  <!-- image -->
+                  <div class="image">
+                    <div class="icon-book"></div>
+                    <img src="img/hornet-nest.png" alt="The Girl Who Kicked the Hornet's Nest">
+                  </div>
+                  
+                  <!-- content -->
+                  <div class="content">
+                    <p>
+                      <a href="#">Девушка, которая взрывала воздушные замки</a>
+                      Стиг Ларрсон
+                    </p>
+                    <p class="price-cancelled">170 грн.</p>
+                    <p class="price">138 грн.</p>
+                  </div>
+                </div>
+                <div class="goods-quantity">1</div>
+                <div class="goods-price price text-right">138 грн.</div>
+                <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+              </div>
+            </div>
+            
+            <!-- delivery -->
+            <div class="order-delivery text-right">Доставка:
+              <span class="price">20 грн.</span>
+              <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+            </div>
+            <div class="order-total">
+              <p class="bonuses"><span class="text-bold">+38 бонусов</span> за этот заказ</p>
+              <p class="total">Сумма заказа: <span class="price">182 грн.</span></p>
+            </div>
+          </div>
+          <div class="line"><img src="img/line.png" alt="line"></div>
+        </li>
+    
+        <!-- item -->
+        <li class="order list-item">
+          <div class="order-heading clearfix">
+            <div class="date" data-time="1337202000000">17 мая 2012</div>
+            <div class="number">№0570</div>
+            <div class="status">
+              <div class="color-success">Доставлен</div>
+              <div class="icon-status-done"></div>
+            </div>
+            <div class="icon-triangle-right"></div>
+          </div>
+
+          <!-- more info -->
+          <div class="info">
+
+            <!-- data -->
+            <div class="order-data">
+              <ul>
+                <li class="data-item">
+                  <div>Имя получателя:</div>
+                  <div>г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                </li>
+                <li class="data-item">
+                  <div>Электронная почта:</div>
+                  <div>+38 050 123-45-56</div>
+                </li>
+                <li class="data-item">
+                  <div>Доставка:</div>
+                  <div>Курьером лично в руки. Адрес: г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                </li>
+                <li class="data-item">
+                  <div>Оплата:</div>
+                  <div>Наличными при получении</div>
+                </li>
+              </ul>
+            </div>
+                
+            <!-- purchases -->
+            <div class="order-purchases">
+              <div class="purchases-heading text-bold clearfix">
+                <div class="goods-description">Товары в заказе</div>
+                <div class="goods-quantity">Количество</div>
+                <div class="goods-price text-right">Цена</div>
+                <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+              </div>
+
+              <!-- goods (item) -->
+              <div class="purchases-goods clearfix">
+                
+                <!-- description -->
+                <div class="goods-description">
+                  
+                  <!-- image -->
+                  <div class="image">
+                    <div class="icon-book"></div>
+                    <img src="img/girl-with-dragon-tattoo.png" alt="Girl with dragon tattoo">
+                  </div>
+                  
+                  <!-- content -->
+                  <div class="content">
+                    <p>
+                      <a href="#">Девушка с татуировкой дракона</a>
+                      Стиг Ларрсон
+                    </p>
+                    <p class="price">138 грн.</p>
+                  </div>
+                </div>
+                <div class="goods-quantity">1</div>
+                <div class="goods-price price text-right">138 грн.</div>
+              </div>
+                  
+              <!-- goods (item) -->
+              <div class="purchases-goods clearfix">
+                  
+                <!-- description -->
+                <div class="goods-description">
+                  
+                  <!-- image -->
+                  <div class="image">
+                    <div class="icon-book"></div>
+                    <img src="img/hornet-nest.png" alt="The Girl Who Kicked the Hornet's Nest">
+                  </div>
+                  
+                  <!-- content -->
+                  <div class="content">
+                    <p>
+                      <a href="#">Девушка, которая взрывала воздушные замки</a>
+                      Стиг Ларрсон
+                    </p>
+                    <p class="price-cancelled">170 грн.</p>
+                    <p class="price">138 грн.</p>
+                  </div>
+                </div>
+                <div class="goods-quantity">1</div>
+                <div class="goods-price price text-right">138 грн.</div>
+                <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+              </div>
+            </div>
+            
+            <!-- delivery -->
+            <div class="order-delivery text-right">Доставка:
+              <span class="price">20 грн.</span>
+              <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+            </div>
+            <div class="order-total">
+              <p class="bonuses"><span class="text-bold">+38 бонусов</span> за этот заказ</p>
+              <p class="total">Сумма заказа: <span class="price">182 грн.</span></p>
+            </div>
+          </div>
+          <div class="line"><img src="img/line.png" alt="line"></div>
+        </li>
+
+        <!-- item -->
+        <li class="order list-item">
+          <div class="order-heading clearfix">
+            <div class="date" data-time="1330466400000">29 февраля 2012</div>
+            <div class="number">№ ME0017681</div>
+            <div class="status">
+              <div class="color-success">Доставлен</div>
+              <div class="icon-status-done"></div>
+            </div>
+            <div class="icon-triangle-right"></div>
+          </div>
+
+          <!-- more info -->
+          <div class="info">
+
+            <!-- data -->
+            <div class="order-data">
+              <ul>
+                <li class="data-item">
+                  <div>Имя получателя:</div>
+                  <div>г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                </li>
+                <li class="data-item">
+                  <div>Электронная почта:</div>
+                  <div>+38 050 123-45-56</div>
+                </li>
+                <li class="data-item">
+                  <div>Доставка:</div>
+                  <div>Курьером лично в руки. Адрес: г. Киев, ул. Саксаганского, 65, кв. 11</div>
+                </li>
+                <li class="data-item">
+                  <div>Оплата:</div>
+                  <div>Наличными при получении</div>
+                </li>
+              </ul>
+            </div>
+                
+            <!-- purchases -->
+            <div class="order-purchases">
+              <div class="purchases-heading text-bold clearfix">
+                <div class="goods-description">Товары в заказе</div>
+                <div class="goods-quantity">Количество</div>
+                <div class="goods-price text-right">Цена</div>
+                <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+              </div>
+
+              <!-- goods (item) -->
+              <div class="purchases-goods clearfix">
+                
+                <!-- description -->
+                <div class="goods-description">
+                  
+                  <!-- image -->
+                  <div class="image">
+                    <div class="icon-book"></div>
+                    <img src="img/girl-with-dragon-tattoo.png" alt="Girl with dragon tattoo">
+                  </div>
+                  
+                  <!-- content -->
+                  <div class="content">
+                    <p>
+                      <a href="#">Девушка с татуировкой дракона</a>
+                      Стиг Ларрсон
+                    </p>
+                    <p class="price">138 грн.</p>
+                  </div>
+                </div>
+                <div class="goods-quantity">1</div>
+                <div class="goods-price price text-right">138 грн.</div>
+              </div>
+                  
+              <!-- goods (item) -->
+              <div class="purchases-goods clearfix">
+                  
+                <!-- description -->
+                <div class="goods-description">
+                  
+                  <!-- image -->
+                  <div class="image">
+                    <div class="icon-book"></div>
+                    <img src="img/hornet-nest.png" alt="The Girl Who Kicked the Hornet's Nest">
+                  </div>
+                  
+                  <!-- content -->
+                  <div class="content">
+                    <p>
+                      <a href="#">Девушка, которая взрывала воздушные замки</a>
+                      Стиг Ларрсон
+                    </p>
+                    <p class="price-cancelled">170 грн.</p>
+                    <p class="price">138 грн.</p>
+                  </div>
+                </div>
+                <div class="goods-quantity">1</div>
+                <div class="goods-price price text-right">138 грн.</div>
+                <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+              </div>
+            </div>
+            
+            <!-- delivery -->
+            <div class="order-delivery text-right">Доставка:
+              <span class="price">20 грн.</span>
+              <div class="line"><img src="img/line-dotted.png" alt="dotted line"></div>
+            </div>
+            <div class="order-total">
+              <p class="bonuses"><span class="text-bold">+38 бонусов</span> за этот заказ</p>
+              <p class="total">Сумма заказа: <span class="price">182 грн.</span></p>
+            </div>
+          </div>
+          <div class="line"><img src="img/line.png" alt="line"></div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

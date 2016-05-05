@@ -1,0 +1,6 @@
+- Table-less layout (i.e. without using the table tags).
+- Nor libraries, neither frameworks used.
+- SCSS as a preprocessor.
+- A sprite for icons.
+- Each order can be outspread by pressing on an order string.
+- Orders can be sorted by pressing on a small arrow nearby the date heading.
